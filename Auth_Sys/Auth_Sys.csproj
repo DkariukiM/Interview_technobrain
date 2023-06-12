@@ -6,5 +6,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+<!-- mysql dependency -->
+<ItemGroup>
+  <Reference Include="MySql.Data">
+    <HintPath>C:\Program Files (x86)\MySQL\mysql.data.dll</HintPath>
+  </Reference>
+  <Reference Include="MySql.Data.EntityFrameworkCore">
+    <HintPath>C:\Users\Cheche Sue\Desktop\Interview\Interview_technobrain\Auth_Sys\mysql.data.entityframeworkcore.dll</HintPath>
+  </Reference>
+</ItemGroup>
+<ItemGroup>
+  <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+</ItemGroup>
+
 
 </Project>

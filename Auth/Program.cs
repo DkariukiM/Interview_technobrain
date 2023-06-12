@@ -1,0 +1,43 @@
+﻿using System;
+using Auth.Controllers;
+
+namespace Auth
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            AuthenticationController authController = new AuthenticationController();
+
+            Console.WriteLine("Welcome to the Secure Authentication System!");
+            Console.WriteLine("--------------------------------------------");
+
+            while (true)
+            {
+                Console.WriteLine("\nAvailable Actions:");
+                Console.WriteLine("1. Register User");
+                Console.WriteLine("2. Authenticate User");
+                Console.WriteLine("3. Exit");
+                Console.Write("Enter your choice (1-3): ");
+
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        authController.RegisterUser();
+                        break;
+                    case "2":
+                        authController.AuthenticateUser();
+                        break;
+                    case "3":
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
+                }
+            }
+        }
+    }
+}

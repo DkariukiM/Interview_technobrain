@@ -15,8 +15,8 @@ namespace Auth_Sys
             while (true)
             {
                 Console.WriteLine("\nAvailable Actions:");
-                Console.WriteLine("1. New Here? Create Account");
-                Console.WriteLine("2. Login To the system");
+                Console.WriteLine("1. Register User");
+                Console.WriteLine("2. Authenticate User");
                 Console.WriteLine("3. Exit");
                 Console.Write("Enter your choice (1-3): ");
 

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+<!-- mysql dependency -->
+<ItemGroup>
+  <Reference Include="MySql.Data">
+    <HintPath>C:\Program Files (x86)\MySQL\mysql.data.dll</HintPath>
+  </Reference>
+  <Reference Include="MySql.Data.EntityFrameworkCore">
+    <HintPath>C:\Users\Cheche Sue\Desktop\Interview\Interview_technobrain\Auth\mysql.data.entityframeworkcore.dll</HintPath>
+  </Reference>
+</ItemGroup>
+<ItemGroup>
+  <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+  <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+</ItemGroup>
+
+
+</Project>

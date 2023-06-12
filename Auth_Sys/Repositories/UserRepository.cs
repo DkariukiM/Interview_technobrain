@@ -2,22 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using MySql.Data.MySqlClient;
-using Auth_Sys.Models;
+using ProjectName.Models;
 
-namespace Auth_Sys.Repositories
+namespace ProjectName.Repositories
 {
     public class UserRepository
     {
-        private readonly string connectionString = "server=localhost;database=auth_sys;uid=root;password= "; // Replace with your MySQL connection string eg server=localhost;database=mydatabase;uid=myusername;password=mypassword;
-
-            // run the above query to create a user table
-            //CREATE TABLE users (
-            // id INT AUTO_INCREMENT PRIMARY KEY,
-            // username VARCHAR(50) NOT NULL,
-            // password VARCHAR(255) NOT NULL,
-            // email VARCHAR(100) NOT NULL);
- 
-
+        private readonly string connectionString = "server=localhost;database=auth_sys;uid=root;password="; // "server=localhost;database=mydatabase;uid=myusername;password=mypassword";
 
 
         public User GetUserByUsername(string username)
